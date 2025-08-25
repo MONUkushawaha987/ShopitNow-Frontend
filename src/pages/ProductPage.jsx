@@ -29,30 +29,32 @@ export default function ProductPage({ user }) {
     navigate("/cart");
   };
 
-  if (!product) return <h1 className="text-center  text-7xl h-screen mt-[200px] ">Loading...</h1>;
+  if (!product)
+    return (
+      <h1 className="text-center text-4xl md:text-7xl  mt-96 ">Loading...</h1>
+    );
   return (
-    <div className="bg-white  rounded shadow md:flex  flex flex-col w-full ">
-     <div className="flex flex-row md:flex-row gap-6">
-       <img
-        className="w-full h-[81vh] md:w-1/2 object-cover rounded"
-        src={product.image || "/placeholder.png"}
-      />
-      <div>
-        {/* <h1 className="text-5xl font-bold mb-6">{product.category}</h1> */}
-        <h1 className="text-5xl font-bold mb-4">{product.name}</h1>
-        {/* <h2 className="text-xl mb-4">Brand Name : {product.brand}</h2> */}
-        <p>Price : ₹ {product.price}</p>
-        <p className="mt-2">{product.description}</p>
-        <p className="mt-2">Rating : {product.rating} ⭐</p>
-        
-        <button
-          className="mt-4 bg-green-600 text-white px-4 py-2 rounded"
-          onClick={addToCart}
-        >
-          Add to cart
-        </button>
+    <div className="bg-white  rounded shadow  mt-12 md:mt-0">
+      <div  className="container mx-auto p-6 md:p-10 grid md:grid-cols-2 gap-8">
+        <img
+          className=" object-cover rounded"
+          src={product.image || "/placeholder.png"}
+        />
+        <div>
+          {/* <h1 className="text-5xl font-bold mb-6">{product.category}</h1> */}
+          <h1 className="text-5xl font-bold mb-4">{product.name}</h1>
+          {/* <h2 className="text-xl mb-4">Brand Name : {product.brand}</h2> */}
+          <p>Price : ₹ {product.price}</p>
+          <p className="mt-2">{product.description}</p>
+          <p className="mt-2">Rating : {product.rating} ⭐</p>
+          <button
+            className="mt-4 bg-green-600 text-white px-4 py-2 rounded"
+            onClick={addToCart}
+          >
+            Add to cart
+          </button>
+        </div>
       </div>
-     </div>
       {/* <div className="text-black  h-[120vh] w-screen bg-red-200">
         <About />
       </div>
