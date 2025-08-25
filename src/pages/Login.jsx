@@ -22,7 +22,7 @@ export default function Login({ setUser }) {
   };
 
   return (
-    <form onSubmit={submit} className="max-w-md mx-auto bg-white p-6 rounded shadow mt-14">
+    <form onSubmit={submit} className=" w-4/5  md:max-w-md mx-auto bg-white p-6 rounded shadow md:mt-28 mt-44">
       <h2 className="text-xl font-bold mb-4">Login</h2>
       <input className="w-full p-2 border rounded mb-2" placeholder="Email" value={email} onChange={e=>setEmail(e.target.value)} />
       <input className="w-full p-2 border rounded mb-2" type="password" placeholder="Password" value={password} onChange={e=>setPassword(e.target.value)} />

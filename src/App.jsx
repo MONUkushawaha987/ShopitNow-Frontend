@@ -32,7 +32,7 @@ function App() {
   return (
     <>
       <Navbar user={user} setUser={setUser} />
-      <div className="container m-0 p-0">
+      <div className="container m-0 p-0 w-screen">
         <Routes >
           <Route path="/" element={<Home />} />
           <Route path="/products" element={<Products />} />

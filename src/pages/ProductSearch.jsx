@@ -32,14 +32,14 @@ export default function ProductSearch() {
   );
 
   return (
-    <div className="p-6 mx-auto text-center">
+    <div className="p-6 mx-auto text-center mt-10 md:mt-0">
       {/* Search Bar */}
       <input
         type="text"
         placeholder="Search for Men, Women, Kids clothes..."
         value={search}
         onChange={(e) => setSearch(e.target.value)}
-        className="w-1/2  p-3 border rounded-xl shadow-md focus:ring-2 focus:ring-blue-500 outline-none"
+        className="md:w-1/2 w-4/5  p-3 border rounded-xl shadow-md focus:ring-2 focus:ring-blue-500 outline-none"
       />
 
       {/* Products List */}

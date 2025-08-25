@@ -23,7 +23,7 @@ export default function Register({ setUser }) {
   };
 
   return (
-    <form onSubmit={submit} className="max-w-md mx-auto bg-white p-6 rounded shadow mt-14">
+    <form onSubmit={submit} className="md:max-w-md w-4/5 mx-auto bg-white p-6 rounded shadow  md:mt-28 mt-44">
       <h2 className="text-xl font-bold mb-4">Create account</h2>
       <input className="w-full p-2 border rounded mb-2" placeholder="Name" value={name} onChange={e=>setName(e.target.value)} />
       <input className="w-full p-2 border rounded mb-2" placeholder="Email" value={email} onChange={e=>setEmail(e.target.value)} />

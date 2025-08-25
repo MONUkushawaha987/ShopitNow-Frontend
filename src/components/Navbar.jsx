@@ -12,33 +12,33 @@ export default function Navbar({ user, setUser }) {
     navigate("/");
   };
   return (
-    <nav className="bg-white shadow  ">
-      <div className="container mx-auto p-4 flex justify-between items-center ">
+    <nav className="bg-white shadow md:relative fixed md:block z-50 top-0 left-0 right-0">
+      <div className="container mx-auto p-1.5 md:p-4 flex justify-between items-center ">
         <div className="flex items-center ">
-          <Link to="/" className="font-bold text-xl mr-8 ">
+          <Link to="/" className="font-bold text-xl mr-8  hidden md:inline-block ">
             <FcShop size={32} className="inline-block mr-2 ml-3" />
             ShopitNow
           </Link>
-          <Link to="/" className="text-gray-600 hover:text-blue-500 mr-6">
+          <Link to="/" className="text-gray-600 hover:text-blue-500 md:mr-6 mr-3">
             Home
           </Link>
           <Link
             to="/products"
-            className="text-gray-600 hover:text-blue-500 mr-6"
+            className="text-gray-600 hover:text-blue-500 md:mr-6 mr-1"
           >
             Products
           </Link>
-          <Link to="/about" className="text-gray-600 hover:text-blue-500 mr-6">
+          <Link to="/about" className="text-gray-600 hover:text-blue-500 mr-6  hidden md:inline-block">
             About
           </Link>
           <Link
             to="/contact"
-            className="text-gray-600 hover:text-blue-500 mr-6"
+            className="text-gray-600 hover:text-blue-500 mr-6  hidden md:inline-block"
           >
             Contact
           </Link>
           <Link to="/search" className="text-gray-600 hover:text-blue-500 mr-6">
-            <TfiSearch className="inline-block ml-4 size-6 " />
+            <TfiSearch className="inline-block ml-4 md:size-6 size-4 " />
             {/* <input
               type="text"
               placeholder="Search products..."
@@ -49,12 +49,12 @@ export default function Navbar({ user, setUser }) {
         </div>
         <div className="flex items-center space-x-4">
           {/* <h1>{cartItems.length}</h1> */}
-          <Link to="/cart">
-            <GiShoppingCart size={32} color="blue" />
+          <Link to="/cart ">
+            <GiShoppingCart className="inline-block text-blue-600 md:size-8 size-5" />
           </Link>
           {user ? (
             <>
-              {user.isAdmin && <Link to="/admin">Admin</Link>}
+              {user.isAdmin && <Link to="/admin" className="hidden md:inline">Admin</Link>}
               <span
                 style={{
                   fontWeight: "bold",

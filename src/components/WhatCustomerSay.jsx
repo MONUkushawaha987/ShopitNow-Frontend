@@ -180,7 +180,7 @@ export default function WhatCustomersSay() {
   }, [sort, onlyPhotos]);
 
   return (
-    <section className="relative mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+    <section className="relative mx-auto max-w-7xl  px-4 py-16 sm:px-6 lg:px-8">
       {/* Background gradient */}
       <div className="pointer-events-none absolute inset-0 -z-10 bg-gradient-to-b from-transparent via-neutral-50 to-transparent dark:via-neutral-900" />
 

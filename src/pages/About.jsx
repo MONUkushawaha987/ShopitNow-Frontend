@@ -4,7 +4,7 @@ const About = () => {
   return (
     <div>
       <p
-        className="text-5xl font-bold text-center mt-10 text-blue-900"
+        className="text-3xl md:text-5xl font-bold text-center mt-10 text-blue-900"
         id="about"
       >
         About ShopitNow

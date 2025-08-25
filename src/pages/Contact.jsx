@@ -19,7 +19,7 @@ const Contact = ({ user }) => {
 
   return (
     <div
-      className="max-w-2xl mx-auto mt-16 mb-9 p-8 bg-white rounded shadow-lg"
+      className="lg:max-w-2xl w-11/12 mx-auto mt-16 mb-9 p-8 bg-white rounded shadow-lg"
       id="contact"
     >
       <h2 className="text-4xl font-bold text-center mb-6 text-purple-700">

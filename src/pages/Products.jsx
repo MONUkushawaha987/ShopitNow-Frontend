@@ -74,9 +74,9 @@ const Products = () => {
  
   return (
     <>
-      <div className="flex p-6">
+      <div className="flex flex-col md:flex-row p-6 mt-8 md:mt-0 ">
         {/* Sidebar */}
-        <div className="w-1/4 bg-gray-100 p-4 rounded-lg shadow-md">
+        <div className="md:w-1/4 w-11/12 bg-gray-100 p-4 rounded-lg shadow-md  ">
           <h2 className="text-lg font-semibold mb-3">Filters</h2>
 
           {/* Category Filter */}
@@ -136,7 +136,7 @@ const Products = () => {
 
         {/* Products */}
         {/* <h1 className="text-3xl font-bold mb-6">Products</h1> */}
-        <div className="w-full grid grid-cols-3 gap-6 px-6">
+        <div className="w-11/12 md:w-full md:grid md:grid-cols-3 md:gap-6 md:px-6 ">
           {filteredProducts.map((product) => (
             <ProductCard
               key={product._id}
